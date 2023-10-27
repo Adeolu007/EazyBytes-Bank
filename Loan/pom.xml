@@ -77,10 +77,14 @@
 <!--					</excludes>-->
 <!--				</configuration>-->
 				<configuration>
-					<image>
+
 <!--						<name>emperor007/${project.artifactId}:s4</name>-->
-						<name>emperor007/loan:1.0</name>
-					</image>
+<!--						<name>emperor007/${project.artifactId}</name>-->
+						<image>
+							<name>emperor007/Loan</name>
+<!--							<tag>1.0</tag> &lt;!&ndash; You can specify the desired tag here &ndash;&gt;-->
+						</image>
+<!--					<imageName>emperor007/Loan:1.0</imageName>-->
 				</configuration>
 			</plugin>
 		</plugins>
