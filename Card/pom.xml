@@ -75,6 +75,8 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.0</version>
+
+<!--				jib configuration -->
 				<configuration>
 					<to>
 						<image>emperor007/card:s4</image>
