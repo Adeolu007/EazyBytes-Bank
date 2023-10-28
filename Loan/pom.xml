@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eazybytes</groupId>
-	<artifactId>Loan</artifactId>
+	<artifactId>loan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Loan</name>
@@ -66,25 +66,15 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-<!--				<configuration>-->
-<!--					<excludes>-->
-<!--						<exclude>-->
-<!--							<groupId>org.projectlombok</groupId>-->
-<!--							<artifactId>lombok</artifactId>-->
-<!--						</exclude>-->
-<!--					</excludes>-->
-<!--				</configuration>-->
-				<configuration>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.0</version>
 
-<!--						<name>emperor007/${project.artifactId}:s4</name>-->
-<!--						<name>emperor007/${project.artifactId}</name>-->
-						<image>
-							<name>emperor007/Loan</name>
-<!--							<tag>1.0</tag> &lt;!&ndash; You can specify the desired tag here &ndash;&gt;-->
-						</image>
-<!--					<imageName>emperor007/Loan:1.0</imageName>-->
+				<!--				jib configuration -->
+				<configuration>
+					<to>
+						<image>emperor007/loan:s4</image>
+					</to>
 				</configuration>
 			</plugin>
 		</plugins>
